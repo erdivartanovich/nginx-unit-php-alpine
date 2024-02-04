@@ -11,9 +11,19 @@ Notes:
  - As of the time this dockerfile was written, the PHP embed module is excluded from Alpine versions greater than 3.17, see this issue: https://github.com/serversideup/docker-php/issues/233
  - For Alpine 3.17, the latest PHP image is php 8.1
 
-## building locally
+## Usage
+
+If your Dockerfile:
+```sh
+FROM erdivartanovich/nginx-unit-php-alpine
+...
+```
+
+## Building locally
 
 ```sh
 docker build -t nginx-unit-alpine-php .
 ```
+
+
 
